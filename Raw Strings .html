@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myTagFn(str) {
+        return { "Parsed": str[0], "Raw": str.raw[0] }
+        }
+        let result1 =myTagFn`\unicode`
+        console.log(result1)
+        let result2 =myTagFn`\u2764\uFE0F`
+        console.log(result2)
+       </script>Regular Expression feature
+
+</body>
+</html>
