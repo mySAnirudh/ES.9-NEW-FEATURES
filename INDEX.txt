@@ -1,0 +1,29 @@
+
+
+    ***** ES9 — New Features   *****
+
+   Here, we will learn about the new features in ES9. Let us begin by understanding about 
+the asynchronous generators.
+Asynchronous Generators and Iteration
+Asynchronous generators can be made asynchronous by using the async keyword. The 
+syntax for defining an async generator is given below:
+async function* generator_name()
+{
+//statements
+}
+Example
+Following example shows an async generator which returns Promise on each call to 
+the next() method of generator.
+<script>
+ async function* load(){
+ yield await Promise.resolve(1);
+ yield await Promise.resolve(2);
+ yield await Promise.resolve(3);
+ }
+ 
+ let l = load();
+ l.next().then(r=>console.log(r))
+ l.next().then(r=>console.log(r))
+ l.next().then(r=>console.log(r))
+ l.next().then(r=>console.log(r))
+</script>
