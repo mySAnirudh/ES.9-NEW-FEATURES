@@ -1,0 +1,9 @@
+RegEx changes 
+So this is regular expression changes, to be honest, I personally don’t like using regular expressions when possible and I found actually don’t have to use them too much so we won’t really be covering the regular expressions changes so much however if you are super interested you can definitely check those out ES9 has added a bunch of support. 
+
+ 
+Rest/Spread properties
+these are really cool they allow us to essentially build up ranges of values through using three ellipses put together this allows the compiler to interpret what values come next in a series of values. 
+
+Asynchronous iteration
+that’s actually the last big one and just lends more powerful support to our asynchronous functionality.
